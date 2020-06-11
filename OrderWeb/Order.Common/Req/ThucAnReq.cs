@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace Order.DAL.Models
+namespace Order.Common.Req
 {
-    public partial class ThucAn
+    public class ThucAnReq
     {
-        public ThucAn()
-        {
-            Order = new HashSet<Order>();
-        }
-
         public string MaThucAn { get; set; }
         public string MaLoai { get; set; }
         public string TenThucAn { get; set; }
@@ -17,7 +13,5 @@ namespace Order.DAL.Models
         public int? GiamGia { get; set; }
         public string ChiChu { get; set; }
 
-        public virtual LoaiThucAn MaLoaiNavigation { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
     }
 }

@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using System;
+using Microsoft.OpenApi.Models;
 
 namespace OrderWeb
 {
@@ -88,6 +88,14 @@ namespace OrderWeb
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            #region -- Swagger --
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1.0");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "API v2.0");
+            });
+            #endregion
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

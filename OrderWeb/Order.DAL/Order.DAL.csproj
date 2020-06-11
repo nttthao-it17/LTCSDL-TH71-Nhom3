@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Rep\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Order.Common\Order.Common.csproj" />
   </ItemGroup>
 

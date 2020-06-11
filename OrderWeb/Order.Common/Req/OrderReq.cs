@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace Order.DAL.Models
+namespace Order.Common.Req
 {
-    public partial class Order
+    public class OrderReq
     {
         public string MaOrder { get; set; }
         public string MaThucAn { get; set; }
@@ -12,8 +13,5 @@ namespace Order.DAL.Models
         public int? GiamGia { get; set; }
         public DateTime? NgayDatMon { get; set; }
         public string MaNguoiDung { get; set; }
-
-        public virtual User MaNguoiDungNavigation { get; set; }
-        public virtual ThucAn MaThucAnNavigation { get; set; }
     }
 }

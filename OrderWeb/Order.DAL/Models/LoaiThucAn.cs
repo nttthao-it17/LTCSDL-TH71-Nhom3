@@ -12,6 +12,7 @@ namespace Order.DAL.Models
 
         public string MaLoai { get; set; }
         public string TenLoaiThucAn { get; set; }
+        public string GhiChu { get; set; }
 
         public virtual ICollection<ThucAn> ThucAn { get; set; }
     }
