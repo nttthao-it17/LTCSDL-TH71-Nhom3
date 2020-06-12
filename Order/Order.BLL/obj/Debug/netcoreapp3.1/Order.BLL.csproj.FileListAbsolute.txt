@@ -1,0 +1,17 @@
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.BLL.deps.json
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.BLL.dll
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.csprojAssemblyReference.cache
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.AssemblyInfoInputs.cache
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.AssemblyInfo.cs
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.csproj.CoreCompileInputs.cache
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.BLL.runtimeconfig.json
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.BLL.runtimeconfig.dev.json
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.BLL.pdb
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.Common.dll
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.DAL.dll
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.Common.pdb
+E:\LTCSDL\Order\Order.BLL\bin\Debug\netcoreapp3.1\Order.DAL.pdb
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.csproj.CopyComplete
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.dll
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.pdb
+E:\LTCSDL\Order\Order.BLL\obj\Debug\netcoreapp3.1\Order.BLL.genruntimeconfig.cache

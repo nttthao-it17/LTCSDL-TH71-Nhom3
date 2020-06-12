@@ -1,0 +1,12 @@
+E:\LTCSDL\Order\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.deps.json
+E:\LTCSDL\Order\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.dll
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csprojAssemblyReference.cache
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfoInputs.cache
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfo.cs
+E:\LTCSDL\Order\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.json
+E:\LTCSDL\Order\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.dev.json
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.genruntimeconfig.cache
+E:\LTCSDL\Order\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.pdb
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csproj.CoreCompileInputs.cache
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.dll
+E:\LTCSDL\Order\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.pdb

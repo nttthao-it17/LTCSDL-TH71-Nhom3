@@ -5021,19 +5021,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\hanhl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LapTrinhCSDL\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
+      "projectUniqueName": "E:\\LTCSDL\\LTCSDL-TH71-Nhom3\\OrderWeb_\\Order.DAL\\Order.DAL.csproj",
       "projectName": "Order.DAL",
-      "projectPath": "D:\\LapTrinhCSDL\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\LapTrinhCSDL\\OrderWeb\\Order.DAL\\obj\\",
+      "projectPath": "E:\\LTCSDL\\LTCSDL-TH71-Nhom3\\OrderWeb_\\Order.DAL\\Order.DAL.csproj",
+      "packagesPath": "C:\\Users\\hanhl\\.nuget\\packages\\",
+      "outputPath": "E:\\LTCSDL\\LTCSDL-TH71-Nhom3\\OrderWeb_\\Order.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hanhl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5046,8 +5046,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\LapTrinhCSDL\\OrderWeb\\Order.Common\\Order.Common.csproj": {
-              "projectPath": "D:\\LapTrinhCSDL\\OrderWeb\\Order.Common\\Order.Common.csproj"
+            "E:\\LTCSDL\\LTCSDL-TH71-Nhom3\\OrderWeb_\\Order.Common\\Order.Common.csproj": {
+              "projectPath": "E:\\LTCSDL\\LTCSDL-TH71-Nhom3\\OrderWeb_\\Order.Common\\Order.Common.csproj"
             }
           }
         }
@@ -5091,7 +5091,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
