@@ -9,6 +9,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { MainOrderComponent } from './main-order/main-order.component';
+import { HomeOrderComponent } from './home-order/home.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    MainOrderComponent,
+    HomeOrderComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +32,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'main-order', component: MainOrderComponent },
+      { path: 'home-order', component: HomeOrderComponent },
+      { path: 'user', component: UserComponent }
     ])
   ],
   providers: [],
