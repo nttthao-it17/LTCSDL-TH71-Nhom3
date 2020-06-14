@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,8 +32,14 @@ namespace OrderWeb.Controllers
             var res = _svc.UpdateOrder(req);
             return Ok(res);
         }
-        //Delete
-        [HttpPost("delete-order")]
+        [HttpPost("search-order")]
+        public IActionResult SearchOrder([FromBody]SearchReq req)
+        {
+          var res = _svc.SearchOrder(req.size, req.page, req.keyWord);
+          return Ok(res);
+        }
+    //Delete
+    [HttpPost("delete-order")]
         public IActionResult DeleteOrder(String maOrder)
         {
             var res = _svc.DeleteOrder(maOrder);

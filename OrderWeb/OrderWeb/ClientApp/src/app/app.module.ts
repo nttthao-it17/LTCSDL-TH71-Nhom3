@@ -12,6 +12,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MainOrderComponent } from './main-order/main-order.component';
 import { HomeOrderComponent } from './home-order/home.component';
 import { UserComponent } from './user/user.component';
+import { FoodComponent } from './food/food.component';
+import { HoaDonComponent} from './hoa-don/hoa-don.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { UserComponent } from './user/user.component';
     FetchDataComponent,
     MainOrderComponent,
     HomeOrderComponent,
-    UserComponent
+    UserComponent,
+    FoodComponent,
+    HoaDonComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -34,7 +40,10 @@ import { UserComponent } from './user/user.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'main-order', component: MainOrderComponent },
       { path: 'home-order', component: HomeOrderComponent },
-      { path: 'user', component: UserComponent }
+      { path: 'user', component: UserComponent },
+      { path: 'food', component: FoodComponent },
+      { path: 'hoa-don', component: HoaDonComponent },
+ 
     ])
   ],
   providers: [],

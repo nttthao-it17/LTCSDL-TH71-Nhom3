@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7tvPCVbbSFXm+MsbvNlR5GIiqF7ooa6s5FU8KoFmUinGGVAv/f4oCG/g5TLEGBKarLbT0nb5uu8T0i5wqh2eRg==",
+  "dgSpecHash": "StZDCYYMRP5AEI3URxr3472rV+8L+6sBAp2Pe+A9N/JKOO1UvngprL6xUQnLSVHx3uAkpnYh/bbqhQRmabz+iA==",
   "success": true,
-  "projectFilePath": "D:\\LapTrinhCSDL\\Order_git\\OrderWeb\\Order.Common\\Order.Common.csproj",
+  "projectFilePath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
