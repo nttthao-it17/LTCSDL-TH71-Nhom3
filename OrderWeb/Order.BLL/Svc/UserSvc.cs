@@ -1,4 +1,4 @@
-﻿using LTCSDL.Common.BLL;
+using LTCSDL.Common.BLL;
 using LTCSDL.Common.Rsp;
 using Order.Common.Req;
 using Order.DAL.Models;
@@ -24,6 +24,9 @@ namespace Order.BLL.Svc
             user.Email = req.Email;
             user.MatKhau = req.MatKhau;
             user.MaLoai = req.MaLoai;
+            user.DiaChi = req.DiaChi;
+            user.SoDienThoai = req.SoDienThoai;
+            
             user.GhiChu = req.GhiChu;
             //Tạo sau khi gán giá trị
             res = base.Create(user);
@@ -35,15 +38,18 @@ namespace Order.BLL.Svc
             var res = new SingleRsp();
             //Khởi tạo user
             User user = new User();
-            //Gán giá trị
+      //Gán giá trị
             user.MaNguoiDung = req.MaNguoiDung;
             user.TenNguoiDung = req.TenNguoiDung;
             user.Email = req.Email;
             user.MatKhau = req.MatKhau;
             user.MaLoai = req.MaLoai;
+            user.DiaChi = req.DiaChi;
+            user.SoDienThoai = req.SoDienThoai;
+
             user.GhiChu = req.GhiChu;
-            //Tạo sau khi gán giá trị
-            res = base.Update(user);
+      //Tạo sau khi gán giá trị
+      res = base.Update(user);
             res.Data = user;
             return res;
         }

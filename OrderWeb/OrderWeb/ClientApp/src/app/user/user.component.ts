@@ -30,6 +30,8 @@ export class UserComponent {
         email: "",
         matKhau: "",
         maLoai: "",
+        diaChi:"",
+        sdt: "",
         ghiChu: ""
     }
     public constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
@@ -149,6 +151,8 @@ export class UserComponent {
                 email: "",
                 matKhau: "",
                 maLoai: "",
+                diaChi:"",
+                sdt: "",
                 ghiChu: ""
             }
         }
