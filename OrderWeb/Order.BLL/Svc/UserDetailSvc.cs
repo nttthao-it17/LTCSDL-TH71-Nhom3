@@ -1,4 +1,4 @@
-﻿using LTCSDL.Common.BLL;
+using LTCSDL.Common.BLL;
 using LTCSDL.Common.Rsp;
 using Order.Common.Req;
 using Order.DAL.Models;
@@ -21,9 +21,7 @@ namespace Order.BLL.Svc
             //Gán giá trị
             userDetail.MaLoaiLogin = req.MaLoaiLogin;
             userDetail.MaNguoiDung = req.MaNguoiDung;
-            userDetail.DiaChi = req.DiaChi;
-            userDetail.Sdt = req.Sdt;
-           
+
             userDetail.GhiChu = req.GhiChu;
             //Tạo sau khi gán giá trị
             res = base.Create(userDetail);

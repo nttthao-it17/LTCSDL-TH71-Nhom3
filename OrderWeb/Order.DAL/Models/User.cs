@@ -7,7 +7,7 @@ namespace Order.DAL.Models
     {
         public User()
         {
-            Order = new HashSet<Order>();
+            Orders = new HashSet<Orders>();
             UserDetail = new HashSet<UserDetail>();
         }
 
@@ -16,9 +16,11 @@ namespace Order.DAL.Models
         public string Email { get; set; }
         public string MatKhau { get; set; }
         public string MaLoai { get; set; }
+        public string DiaChi { get; set; }
+        public string SoDienThoai { get; set; }
         public string GhiChu { get; set; }
 
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Orders> Orders { get; set; }
         public virtual ICollection<UserDetail> UserDetail { get; set; }
     }
 }

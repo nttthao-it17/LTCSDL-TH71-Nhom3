@@ -16,7 +16,8 @@ namespace Order.DAL.Models
         }
 
         public virtual DbSet<LoaiThucAn> LoaiThucAn { get; set; }
-        public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<ThongTinHoaDon> ThongTinHoaDon { get; set; }
         public virtual DbSet<ThucAn> ThucAn { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserDetail> UserDetail { get; set; }
@@ -26,7 +27,7 @@ namespace Order.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-8CB76R1\\HUEJH;Initial Catalog=Order;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Data Source=.\\huejh;Initial Catalog=Order;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;");
             }
         }
 
@@ -43,29 +44,48 @@ namespace Order.DAL.Models
                 entity.Property(e => e.TenLoaiThucAn).HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Order>(entity =>
+            modelBuilder.Entity<Orders>(entity =>
             {
-                entity.HasKey(e => e.MaOrder);
+                entity.HasKey(e => e.MaOrder)
+                    .HasName("PK_Order");
 
                 entity.Property(e => e.MaOrder).HasMaxLength(50);
 
-                entity.Property(e => e.MaNguoiDung).HasMaxLength(50);
+                entity.Property(e => e.GhiChu)
+                    .HasMaxLength(10)
+                    .IsFixedLength();
 
-                entity.Property(e => e.MaThucAn).HasMaxLength(50);
+                entity.Property(e => e.MaNguoiDung).HasMaxLength(50);
 
                 entity.Property(e => e.NgayDatMon).HasColumnType("date");
 
-                entity.Property(e => e.TenThucAn).HasMaxLength(50);
-
                 entity.HasOne(d => d.MaNguoiDungNavigation)
-                    .WithMany(p => p.Order)
+                    .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.MaNguoiDung)
-                    .HasConstraintName("FK_Order_User");
+                    .HasConstraintName("FK_Order_User1");
+            });
+
+            modelBuilder.Entity<ThongTinHoaDon>(entity =>
+            {
+                entity.HasKey(e => new { e.MaOrder, e.MaThucAn });
+
+                entity.Property(e => e.MaOrder).HasMaxLength(50);
+
+                entity.Property(e => e.MaThucAn).HasMaxLength(50);
+
+                entity.Property(e => e.GhiChu).HasMaxLength(50);
+
+                entity.HasOne(d => d.MaOrderNavigation)
+                    .WithMany(p => p.ThongTinHoaDon)
+                    .HasForeignKey(d => d.MaOrder)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ThongTinHoaDon_Order");
 
                 entity.HasOne(d => d.MaThucAnNavigation)
-                    .WithMany(p => p.Order)
+                    .WithMany(p => p.ThongTinHoaDon)
                     .HasForeignKey(d => d.MaThucAn)
-                    .HasConstraintName("FK_Order_ThucAn");
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ThongTinHoaDon_ThucAn");
             });
 
             modelBuilder.Entity<ThucAn>(entity =>
@@ -93,6 +113,8 @@ namespace Order.DAL.Models
 
                 entity.Property(e => e.MaNguoiDung).HasMaxLength(50);
 
+                entity.Property(e => e.DiaChi).HasMaxLength(50);
+
                 entity.Property(e => e.Email)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -107,6 +129,8 @@ namespace Order.DAL.Models
                     .IsRequired()
                     .HasMaxLength(50);
 
+                entity.Property(e => e.SoDienThoai).HasMaxLength(50);
+
                 entity.Property(e => e.TenNguoiDung)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -119,15 +143,9 @@ namespace Order.DAL.Models
 
                 entity.Property(e => e.MaLoaiLogin).HasMaxLength(50);
 
-                entity.Property(e => e.DiaChi).HasMaxLength(50);
-
                 entity.Property(e => e.GhiChu).HasMaxLength(50);
 
                 entity.Property(e => e.MaNguoiDung).HasMaxLength(50);
-
-                entity.Property(e => e.Sdt)
-                    .HasColumnName("SDT")
-                    .HasMaxLength(50);
 
                 entity.HasOne(d => d.MaNguoiDungNavigation)
                     .WithMany(p => p.UserDetail)

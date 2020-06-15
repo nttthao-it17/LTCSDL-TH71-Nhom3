@@ -9,20 +9,16 @@ using System.Linq;
 using System.Text;
 namespace Order.BLL.Svc
 {
-    public class OrderSvc : GenericSvc<OrderRep, DAL.Models.Order>
+    public class OrderSvc : GenericSvc<OrderRep, Orders>
     {
         //Sử dụng hàm tạo
         public SingleRsp CreateOrder(OrderReq req)
         {
             var res = new SingleRsp();
             //Khởi tạo order
-            DAL.Models.Order order = new DAL.Models.Order();
+            Orders order = new Orders();
             //Gán giá trị
             order.MaOrder = req.MaOrder;
-            order.MaThucAn = req.MaThucAn;
-            order.TenThucAn = req.TenThucAn;
-            order.Gia = req.Gia;
-            order.GiamGia = req.GiamGia;
             order.NgayDatMon = req.NgayDatMon;
             order.MaNguoiDung = req.MaNguoiDung;
             //Tạo sau khi gán giá trị
@@ -35,13 +31,10 @@ namespace Order.BLL.Svc
         {
             var res = new SingleRsp();
             //Khởi tạo order
-            DAL.Models.Order order = new DAL.Models.Order();
+            Orders order = new Orders();
             //Gán giá trị
             order.MaOrder = req.MaOrder;
-            order.MaThucAn = req.MaThucAn;
-            order.TenThucAn = req.TenThucAn;
-            order.Gia = req.Gia;
-            order.GiamGia = req.GiamGia;
+
             order.NgayDatMon = req.NgayDatMon;
             order.MaNguoiDung = req.MaNguoiDung;
             //Tạo sau khi gán giá trị
@@ -60,7 +53,7 @@ namespace Order.BLL.Svc
           {
             //Có dữ liệu
             allValues = _rep.All.Where(value => value.MaOrder.Contains(keyWord) //Kiểm tra theo mã
-            || value.TenThucAn.Contains(keyWord)); //Kiểm tra theo tên
+            || value.MaNguoiDung.Contains(keyWord)); //Kiểm tra theo tên
           }
           //Độ dời
           int offset = (page - 1) * size;

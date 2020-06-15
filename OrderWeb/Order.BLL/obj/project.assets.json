@@ -5047,11 +5047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.BLL\\Order.BLL.csproj",
+      "projectUniqueName": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.BLL\\Order.BLL.csproj",
       "projectName": "Order.BLL",
-      "projectPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.BLL\\Order.BLL.csproj",
+      "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.BLL\\Order.BLL.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.BLL\\obj\\",
+      "outputPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5067,11 +5067,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj": {
-              "projectPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj"
+            "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
+              "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj"
             },
-            "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.DAL\\Order.DAL.csproj": {
-              "projectPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.DAL\\Order.DAL.csproj"
+            "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj": {
+              "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj"
             }
           }
         }

@@ -7,8 +7,6 @@ namespace Order.DAL.Models
     {
         public string MaLoaiLogin { get; set; }
         public string MaNguoiDung { get; set; }
-        public string DiaChi { get; set; }
-        public string Sdt { get; set; }
         public string GhiChu { get; set; }
 
         public virtual User MaNguoiDungNavigation { get; set; }

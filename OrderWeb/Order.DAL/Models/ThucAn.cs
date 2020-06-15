@@ -7,7 +7,7 @@ namespace Order.DAL.Models
     {
         public ThucAn()
         {
-            Order = new HashSet<Order>();
+            ThongTinHoaDon = new HashSet<ThongTinHoaDon>();
         }
 
         public string MaThucAn { get; set; }
@@ -18,6 +18,6 @@ namespace Order.DAL.Models
         public string ChiChu { get; set; }
 
         public virtual LoaiThucAn MaLoaiNavigation { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<ThongTinHoaDon> ThongTinHoaDon { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using LTCSDL.Common.DAL;
+using LTCSDL.Common.DAL;
 using LTCSDL.Common.Rsp;
 using Order.DAL.Models;
 using System;
@@ -8,10 +8,10 @@ using System.Text;
 
 namespace Order.DAL.Rep
 {
-    public class OrderRep : GenericRep<OrderContext, Models.Order>
+    public class OrderRep : GenericRep<OrderContext,Orders>
     {
         //create
-        public SingleRsp Create(Models.Order order)
+        public SingleRsp Create(Orders order)
         {
             var res = new SingleRsp();
             //Khởi tạo
@@ -21,7 +21,7 @@ namespace Order.DAL.Rep
                 {
                     try
                     {
-                        context.Order.Add(order); //Câu lệnh tạo của EF
+                        context.Orders.Add(order); //Câu lệnh tạo của EF
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -35,7 +35,7 @@ namespace Order.DAL.Rep
             return res;
         }
         //Update
-        public SingleRsp Update(Models.Order order)
+        public SingleRsp Update(Orders order)
         {
             var res = new SingleRsp();
             //Khởi tạo
@@ -45,7 +45,7 @@ namespace Order.DAL.Rep
                 {
                     try
                     {
-                        context.Order.Update(order); //Câu lệnh sửa của EF
+                        context.Orders.Update(order); //Câu lệnh sửa của EF
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -67,10 +67,10 @@ namespace Order.DAL.Rep
             {
                 using (var tran = context.Database.BeginTransaction())
                 {
-                    var u = context.Order.FirstOrDefault(value => value.MaOrder == maOrder);
+                    var u = context.Orders.FirstOrDefault(value => value.MaOrder == maOrder);
                     try
                     {
-                        context.Order.Remove(u); //Câu lệnh xóa của EF
+                        context.Orders.Remove(u); //Câu lệnh xóa của EF
                         context.SaveChanges();
                         tran.Commit();
                     }

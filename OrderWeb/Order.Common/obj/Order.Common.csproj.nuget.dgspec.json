@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj": {}
+    "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {}
   },
   "projects": {
-    "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj": {
+    "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj",
+        "projectUniqueName": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
         "projectName": "Order.Common",
-        "projectPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\Order.Common.csproj",
+        "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\LapTrinhCSDL\\Order_git_lan2\\OrderWeb\\Order.Common\\obj\\",
+        "outputPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
