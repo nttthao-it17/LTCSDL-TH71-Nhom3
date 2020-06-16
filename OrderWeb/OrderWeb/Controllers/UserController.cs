@@ -43,5 +43,12 @@ namespace OrderWeb.Controllers
             var res = _svc.DeleteUser(userId);
             return Ok(res);
         }
+
+    [HttpPost("login-user")]
+    public IActionResult Login(LoginReq req)
+    {
+      var res = _svc.Login(req);
+      return Ok(res);
     }
+  }
 }

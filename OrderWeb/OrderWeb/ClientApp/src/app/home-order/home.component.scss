@@ -1,9 +1,10 @@
 .card-img-overlay{
-  width: auto;
+  padding: 0px;
+  width: 100%;
   height: 30px;
 }
 .logo img{
-    width: 180px;
+    width: 100%;
     height: 26,41px;
 } 
 
@@ -15,7 +16,7 @@ input.cost {
   /* Top left text */
   .top-left {
     position: absolute;
-    top: 13px;
+    top: 20px;
     left: 25px;
     
 
@@ -76,17 +77,17 @@ input.cost {
  
     line-height: 1.5;
     text-align: left;
-    width: 1290px;
+    width: 100%;
     height: 550px;
   }
   .steps-inner{
     position: relative;
     margin: 0 auto;
-    max-width: 1020px;
+    max-width: 100%;
     height: 100%;
     padding: 60px 0;
     overflow: hidden;
-    width: 1290px;
+    width: 100%;
     height: 613px;
     
   }
@@ -106,7 +107,7 @@ input.cost {
 }
 h3 {
   display: block;
-  width: 1010px;
+  width: 100%;
   height: 22px;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -135,7 +136,7 @@ h4 {
 }
 
 .steps-wrapper.number-of-steps-3{
-  width: 1010px;
+  width: 100%;
   height: 359px;
 }
 .steps-inner .number-of-steps-3 .step-wrapper {
@@ -154,7 +155,7 @@ h4 {
   padding: 45px 0 20px;
 }
 .step-wrapper{
-  width: 412.8px;
+  width: 100%;
   height: 200px;
 }
 .steps-inner .steps-wrapper .step-wrapper .step-icon {

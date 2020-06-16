@@ -1,5 +1,6 @@
-﻿using LTCSDL.Common.DAL;
+using LTCSDL.Common.DAL;
 using LTCSDL.Common.Rsp;
+using Order.Common.Req;
 using Order.DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -82,6 +83,29 @@ namespace Order.DAL.Rep
                 }
             }
             return res;
+        }
+
+        public SingleRsp Login(LoginReq req)
+        {
+           SingleRsp res = new SingleRsp();
+      User user = Context.User.SingleOrDefault(user => user.Email.Equals(req.email));
+      if(user != null)
+      {
+        if (user.MatKhau.Equals(req.password))
+        {
+          res.Data = Context.User.Where(u => u.Email.Equals(req.email)).FirstOrDefault();
+        
+
+        } else
+        {
+          res.SetError("Mat khau khong hop le");
+        }
+      }
+      else
+      {
+        res.SetError("nguoi dung khong ton tai");
+      }
+      return res;
         }
     }
     //Scaffold-DbContext "Data Source=DESKTOP-8CB76R1\HUEJH;Initial Catalog=Order;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force

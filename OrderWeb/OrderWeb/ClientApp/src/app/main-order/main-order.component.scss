@@ -1,4 +1,5 @@
 .card-img-overlay{
+    padding: 0px;
     width: auto;
     height: 30px;
   }
@@ -58,7 +59,7 @@
   left: 16px;
 }  
 .listing-inner{
-  width: 1290px;
+  width: 100%;
   height: 700px;
   position: relative;
   margin: 0 auto;

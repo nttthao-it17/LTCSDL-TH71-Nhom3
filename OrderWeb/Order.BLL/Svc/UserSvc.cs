@@ -92,5 +92,12 @@ namespace Order.BLL.Svc
             res = _rep.Delete(userId);
             return res;
         }
+
+        public SingleRsp Login(LoginReq req)
+    {
+      SingleRsp res = new SingleRsp();
+      res.Data = _rep.Login(req);
+      return res;
+    }
     }
 }
