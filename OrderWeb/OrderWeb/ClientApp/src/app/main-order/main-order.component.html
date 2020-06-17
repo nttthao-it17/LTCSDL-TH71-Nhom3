@@ -130,12 +130,21 @@
                 <!-- Modal -->
 
                 <div class="text-center">
-                <a href=""  data-toggle="modal" data-target="#darkModalForm">
-                    <button class="menu button-myaccount userlogin" style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;" >
-                        
-                      Đăng nhập / Đăng kí
-                    </button>
-                </a>
+                    <a *ngIf = "!isLogin" href="javascript:void(0)" data-toggle="modal" (click) = "loginForm()">
+                        <button class="menu button-myaccount userlogin"
+                            style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;">
+
+                            Đăng nhập / Đăng kí
+                        </button>
+                    </a>
+
+                    <a *ngIf = "isLogin" href="javascript:void(0)" data-toggle="modal" (click) = "loginForm()">
+                        <button class="menu button-myaccount userlogin"
+                            style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;">
+
+                            Hello {{user.email}}
+                        </button>
+                    </a>
                 </div>
                 
             </div>
