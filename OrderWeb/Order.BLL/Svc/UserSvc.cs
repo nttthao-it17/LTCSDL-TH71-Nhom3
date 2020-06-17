@@ -95,9 +95,8 @@ namespace Order.BLL.Svc
 
         public SingleRsp Login(LoginReq req)
     {
-      SingleRsp res = new SingleRsp();
-      res.Data = _rep.Login(req);
-      return res;
+      
+      return _rep.Login(req);
     }
     }
 }

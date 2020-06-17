@@ -36,14 +36,14 @@
                                 <div class="modal-body">
                                     <!--Body-->
                                     <div class="md-form mb-5">
-                                        <input type="email" id="Form-email5" class="form-control validate white-text"
+                                        <input type="email" [(ngModel)] = "email" id="Form-email5" class="form-control validate white-text"
                                             style="width:100%; height: 30px; font-size: 16px;">
                                         <label data-error="wrong" data-success="right" for="Form-email5"
                                             style=" color: #00C851; font-size: 16px;">Email</label>
                                     </div>
 
                                     <div class="md-form pb-3">
-                                        <input type="password" id="Form-pass5" class="form-control validate white-text"
+                                        <input type="password"  [(ngModel)] = "matKhau" id="Form-pass5" class="form-control validate white-text"
                                             style="width: 100%; height: 30px; font-size: 16px;">
                                         <label data-error="wrong" data-success="right" for="Form-pass5"
                                             style=" color: #00C851; font-size: 16px;">Mật khẩu</label>
@@ -58,7 +58,7 @@
                                         <div class="text-center mb-3 col-md-12">
                                             <button type="button"
                                                 class="btn btn-success btn-block btn-rounded z-depth-1"
-                                                style="font-size: 18px;">Đăng nhập</button>
+                                                style="font-size: 18px;" (click) = "dangNhap()" >Đăng nhập</button>
 
                                             <!--Tạo tài khoản-->
                                             <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog"

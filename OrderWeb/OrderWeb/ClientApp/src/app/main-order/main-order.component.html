@@ -30,12 +30,12 @@
                         <div class="modal-body">
                         <!--Body-->
                         <div class="md-form mb-5">
-                            <input type="email" id="Form-email5" class="form-control validate white-text" style="width:100%; height: 30px; font-size: 16px;">
+                            <input type="email" [(ngModel)] = "email" id="Form-email5" class="form-control validate white-text" style="width:100%; height: 30px; font-size: 16px;">
                             <label data-error="wrong" data-success="right" for="Form-email5" style=" color: #00C851; font-size: 16px;">Email</label>
                         </div>
 
                         <div class="md-form pb-3">
-                            <input type="password" id="Form-pass5" class="form-control validate white-text" style="width: 100%; height: 30px; font-size: 16px;">
+                            <input type="password" [(ngModel)] = "matKhau" id="Form-pass5" class="form-control validate white-text" style="width: 100%; height: 30px; font-size: 16px;">
                             <label data-error="wrong" data-success="right" for="Form-pass5" style=" color: #00C851; font-size: 16px;">Mật khẩu</label>
                             <div class="form-group mt-4">
                             </div>
@@ -46,7 +46,7 @@
 
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-12">
-                            <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px;">Đăng nhập</button>
+                            <button type="button" (click) = "dangNhap()" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px;">Đăng nhập</button>
                             
 
 
@@ -195,3 +195,5 @@
 
     </div>
 </body>
+
+

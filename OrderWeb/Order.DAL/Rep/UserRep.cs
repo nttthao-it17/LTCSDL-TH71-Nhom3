@@ -60,6 +60,7 @@ namespace Order.DAL.Rep
             }
             return res;
         }
+        //Delete
         public SingleRsp Delete(String userId)
         {
             var res = new SingleRsp();
@@ -88,12 +89,12 @@ namespace Order.DAL.Rep
         public SingleRsp Login(LoginReq req)
         {
            SingleRsp res = new SingleRsp();
-      User user = Context.User.SingleOrDefault(user => user.Email.Equals(req.email));
+      User user = Context.User.SingleOrDefault(x => x.Email.Equals(req.email));
       if(user != null)
       {
         if (user.MatKhau.Equals(req.password))
         {
-          res.Data = Context.User.Where(u => u.Email.Equals(req.email)).FirstOrDefault();
+          res.Data = user;
         
 
         } else
