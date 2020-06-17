@@ -35,7 +35,7 @@ import { HoaDonComponent} from './hoa-don/hoa-don.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: HomeOrderComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'main-order', component: MainOrderComponent },
