@@ -5021,19 +5021,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\hanhl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
+      "projectUniqueName": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
       "projectName": "Order.DAL",
-      "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\obj\\",
+      "projectPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
+      "packagesPath": "C:\\Users\\hanhl\\.nuget\\packages\\",
+      "outputPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hanhl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5046,8 +5046,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
-              "projectPath": "E:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj"
+            "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
+              "projectPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj"
             }
           }
         }
@@ -5091,7 +5091,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
