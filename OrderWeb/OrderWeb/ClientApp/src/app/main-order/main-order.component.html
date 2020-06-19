@@ -1,22 +1,22 @@
 <header>
     <div class="head">
       
-        <div class="card-img-overlay ">
+        <div class="card-img-overlay">
 
-            <img src="assets/img/pizza.jpg" class="card-img" alt="Order.com" style = "width: 100%; height:325px;">
+            <img src="assets/img/pizza.jpg" class="card-img" alt="Order.com" style = "width: 1290px; height:325px;">
             
             <div class="top-left">
-               
-                    <button style="width: 225px;margin-top: 5px;height: 65px; background-color: darkorange;" type="button" [routerLink] = "['/home-order']" ><a><img src="assets/img/orde.png" class = "card-img"alt="OrderLogo.com" max-width = "180px" height="26.41px"></a></button>
-               
+                <a href="#">
+                    <button style="width: 225px;height: 65px; background-color: darkorange;" ><img src="assets/img/orde.png" class = "card-img"alt="OrderLogo.com" max-width = "180px" height="26.41px"></button>
+                </a>
             </div>
         
             <div class="top-right">
                 <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog form-dark" role="document" >
-                   <!--Content-->
-                   <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg'); width: 420px; height: 600px;">
+                    <!--Content-->
+                    <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg'); width: 430px; height: 600px;">
                     <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
                         <!--Header-->
                         <div class="modal-header text-center pb-4">
@@ -30,13 +30,13 @@
                         <div class="modal-body">
                         <!--Body-->
                         <div class="md-form mb-5">
-                            <input type="email" [(ngModel)] = "email" id="Form-email5" class="form-control validate white-text" style="width:100%; height: 30px; font-size: 16px;">
-                            <label data-error="wrong" data-success="right" for="Form-email5" style=" color: #00C851; font-size: 16px;">Email</label>
+                            <input type="email" id="Form-email5" class="form-control validate white-text" style="width: 340px; height: 30px; font-size: 14px;">
+                            <label data-error="wrong" data-success="right" for="Form-email5" style=" color: #00C851; font-size: 14px;">Email</label>
                         </div>
 
                         <div class="md-form pb-3">
-                            <input type="password" [(ngModel)] = "matKhau" id="Form-pass5" class="form-control validate white-text" style="width: 100%; height: 30px; font-size: 16px;">
-                            <label data-error="wrong" data-success="right" for="Form-pass5" style=" color: #00C851; font-size: 16px;">Mật khẩu</label>
+                            <input type="password" id="Form-pass5" class="form-control validate white-text" style="width: 340px; height: 30px; font-size: 14px;">
+                            <label data-error="wrong" data-success="right" for="Form-pass5" style=" color: #00C851; font-size: 14px;">Mật khẩu</label>
                             <div class="form-group mt-4">
                             </div>
                         </div>
@@ -46,21 +46,15 @@
 
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-12">
-                            <button type="button" (click) = "dangNhap()" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px;">Đăng nhập</button>
+                            <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px;">Đăng nhập</button>
                             
-
-
-
-
-
 
                         <!--Tạo tài khoản-->
                         <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true" >
-                            
                             <div class="modal-dialog" role="document">
                                 <!--Content-->
-                                <div class="modal-content form-elegant" style="width: 100%; height: 680px; margin-left: -10px;">
+                                <div class="modal-content form-elegant" style="width: 530px; height: 600px; margin-left: -10px;">
                                 <!--Header-->
                                 <div class="modal-header text-center" >
                                     <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel" style="color: #00C851;"><strong>Tạo tài khoản</strong></h3>
@@ -72,17 +66,10 @@
                                     <div class="modal-body mx-4">
                                     <!--Body-->
                                     <div class="md-form mb-5">
-                                        
                                     <label data-error="wrong" data-success="right" for="Form-name" style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Name</label>
                                     <input type="name" id="Form-name" class="form-control validate" style="height: 40px;">
                                     <label data-error="wrong" data-success="right" for="Form-email1" style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Email</label>
                                     <input type="email" id="Form-email1" class="form-control validate" style="height: 40px;">
-                                    <label data-error="wrong" data-success="right" for="Form-diaChi" style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Địa chỉ</label>
-                                    <input type="diaChi" id="Form-diaChi" class="form-control validate" style="height: 40px;">
-                                    
-                                    <label data-error="wrong" data-success="right" for="Form-sdt" style="color: #00C851; text-align: left; font-size: 14px; margin-left: -390px;">Số điện thoại</label>
-                                    <input type="sdt" id="Form-sdt" class="form-control validate" style="height: 40px;">
-                                   
                                    
                                     </div>
 
@@ -112,7 +99,7 @@
                             <div class="text-center">
                                 <a href=""  class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">
                             
-                                    <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px; background-color: #fff;color: #00C851; width: 294px; height: 36.5px; margin-left: -12px;">Tạo tài khoản</button>
+                                    <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="font-size: 18px; background-color: #fff;color: #00C851; width: 348px; height: 36.5px; margin-left: -9.5px;">Tạo tài khoản</button>
                                 </a>
                             </div>
                             </div>
@@ -130,21 +117,12 @@
                 <!-- Modal -->
 
                 <div class="text-center">
-                    <a *ngIf = "!isLogin" href="javascript:void(0)" data-toggle="modal" (click) = "loginForm()">
-                        <button class="menu button-myaccount userlogin"
-                            style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;">
-
-                            Đăng nhập / Đăng kí
-                        </button>
-                    </a>
-
-                    <a *ngIf = "isLogin" href="javascript:void(0)" data-toggle="modal" (click) = "loginForm()">
-                        <button class="menu button-myaccount userlogin"
-                            style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;">
-
-                            Hello {{user.email}}
-                        </button>
-                    </a>
+                <a href=""  data-toggle="modal" data-target="#darkModalForm">
+                    <button class="menu button-myaccount userlogin" style="width: 190px; height: 40px; background-color:darkorange;color: #fff; margin-top: 25px;font-size: 18px;" >
+                        
+                      Đăng nhập / Đăng kí
+                    </button>
+                </a>
                 </div>
                 
             </div>
@@ -165,7 +143,7 @@
                         <form class="form-inline my-2 my-lg-0">
                             <input type="text" class="subnavi-search-input restaurantsearchstring" id="irestaurantsearchstring" maxlength="25" placeholder="Tìm kiếm nhà hàng"
                         style="width: 190px; height: 40px; font-size: 16px;">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style=" height:37 px;font-size: 16px; color: darkorange;text-align: center; font-style:initial;">Tìm kiếm</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 80px; height: 40px;font-size: 16px; color: darkorange;text-align: center; font-style:initial;">Tìm kiếm</button>
                           </form>
                       
                       <span class="btn-remove-search"></span>
@@ -179,8 +157,174 @@
         </div>
     </div>
 </header>
-<body style="width: 100%; height: 980px; background-color: #f8f5f2;">
-   
+<body style="width: 1290px; height: 980px; background-color: #f8f5f2;">
+    <div class = "listing-inner">
+        <section class="awe-section-2"> 
+            <div id="service" class="section_service lazyload" data-src="//bizweb.dktcdn.net/100/387/180/themes/765139/assets/bg_dichvu.png?1590391920314" data-was-processed="true" style="background-image: url(&quot;//bizweb.dktcdn.net/100/387/180/themes/765139/assets/bg_dichvu.png?1590391920314&quot;);">
+            <div class="container">
+                <div class="heading clearfix a-center">
+                    <h2 class="h2">
+                        <span>Dịch vụ chúng tôi cung cấp</span>
+                    </h2>
+                    <span class="small">Hiểu lần đầu là bỡ ngỡ, Wedding Planer sẽ sát cánh cùng bạn làm nên lần đầu thật trọn vẹn</span>
+                    <img class="icon_title" src="//bizweb.dktcdn.net/100/387/180/themes/765139/assets/icon_title.png?1590391920314" alt="Template Wedding Planer">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/bunbohue.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Bún bò Huế">Bún bò Huế</a>
+                                </h3>
+                                <span>Giá: 30,000đ </span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/comsuon.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Cơm sườn">Cơm sườn</a>
+                                </h3>
+                                <span>Giá: 25,000đ</span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/bokho.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Bò kho bánh mì">Bò kho bánh mì</a>
+                                </h3>
+                                <span>Giá: 40,000đ</span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/phoga.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Phở gà">Phở gà</a>
+                                </h3>
+                                <span>Giá: 35,000đ</span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/hutieu.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Hũ tiếu">Hũ tiếu</a>
+                                </h3>
+                                <span>Giá: 25,000đ</span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="scale_hover_img lazyload" style="background-image: url(assets/img/comgaxoimo.jpg);">
+                            <div class="info">
+                                <h3>
+                                    <a href="tin-tuc" title="Cơm gà xối mỡ">Cơm gà xối mỡ</a>
+                                </h3>
+                                <span>Giá: 30,000đ</span>
+                                <br>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
+                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="modal fade" id="dialog1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                
+                    <div class="modal-header">
+                        <h5 class="modal-title">Chọn số lượng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="buttons_added">
+                            <span>Số lượng: </span>
+                            <input class="minus is-form" type="button" value="-" (click) = "xuLy()">
+                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                            <input class="plus is-form" type="button" value="+" (click) = "xuLy()">
+                            <br>
+                            <span>Tạm tính: </span>
+                            <output>Tổng tiền</output>
+
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary">Lưu lại</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
-
-
+<div class="d-flex flex-column">
+    <div class = "content-apps content-apps-vn">
+        <div class="apps-inner">
+            <img src="assets/img/bgApps.jpg" class="card-img" alt="Order.com" style = "width: 100%; height: 390px;">
+            <div class="top-left2">
+                <div class="apps-headline"><h3 ><span style="background-color: black;  font-size: 40px; line-height: 40p; text-align: center;padding: 4px; color:whitesmoke ;">Tải ứng dụng Order.com</span></h3></div>                   
+            </div>
+            <div class="top-left3">
+                <div class="apps-headline"><h3 ><span style="background-color: black;  font-size: 40px; line-height: 40p; text-align: center;padding: 4px; color:whitesmoke ;">Click chuột và tận hưởng sự tiện dụng</span></h3></div>
+            </div>         
+        </div>               
+    </div>
+</div>
+<footer style="width: 100%;height: 150 px;">
+    <div class="colofon" style="background-color:darkorange; color: white;">
+        <div class="row" style="width: 350px; height: 300px;">
+            <ul>
+                <li class="headline"><h2 style=" text-align: left;">Web Order Order.com được thực hiện bởi: </h2></li>
+                <h4 style="font-size: 16px; text-align: left;">Nguyễn Ngọc Huế</h4>
+                <h4 style="font-size: 16px; text-align: left;">Nguyễn Thị Thu Thảo</h4>
+                <h4 style="font-size: 16px; text-align: left;">Lê Thị Mỹ Hạnh</h4>
+                <h4 style="font-size: 16px;text-align: left;">Nguyễn Thanh Sang</h4>
+            </ul>
+        </div>
+        <div class = "row" style=" height: auto; float: left; margin-top: -250px; margin-left: 350px; color:#fff;">
+            <ul>
+                <h2 style=" text-align: center;">Giảng Viên: Lê Ngọc Hiếu</h2>
+                <h2 style=" text-align: center;">Trường đại học Mở TP. Hồ Chí Minh</h2>
+                
+            </ul>
+            <ul>
+                <h2 style=" text-align: center;">Trang Web tham khảo: <a href="https://www.vietnammm.com/" target="_blank" class="copyright" style="color:#fff;">Vietnammm.com</a></h2>
+            </ul>
+        </div>
+    </div>
+</footer>

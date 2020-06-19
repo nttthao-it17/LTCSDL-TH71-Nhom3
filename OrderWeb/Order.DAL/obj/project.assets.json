@@ -5021,19 +5021,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hanhl\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
+      "projectUniqueName": "F:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
       "projectName": "Order.DAL",
-      "projectPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
-      "packagesPath": "C:\\Users\\hanhl\\.nuget\\packages\\",
-      "outputPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\obj\\",
+      "projectPath": "F:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\Order.DAL.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "F:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hanhl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5046,8 +5046,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
-              "projectPath": "C:\\Du lieu\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj"
+            "F:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
+              "projectPath": "F:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj"
             }
           }
         }
@@ -5086,6 +5086,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

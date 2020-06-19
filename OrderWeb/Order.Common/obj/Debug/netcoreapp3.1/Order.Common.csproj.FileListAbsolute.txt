@@ -58,3 +58,15 @@ C:\Du lieu\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order
 C:\Du lieu\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.dll
 C:\Du lieu\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.pdb
 C:\Du lieu\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.genruntimeconfig.cache
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.deps.json
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.json
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.dev.json
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.dll
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.pdb
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csprojAssemblyReference.cache
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfoInputs.cache
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfo.cs
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csproj.CoreCompileInputs.cache
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.dll
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.pdb
+F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.genruntimeconfig.cache
