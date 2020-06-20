@@ -70,3 +70,15 @@ F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.
 F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.dll
 F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.pdb
 F:\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.genruntimeconfig.cache
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.deps.json
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.json
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.runtimeconfig.dev.json
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.dll
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\bin\Debug\netcoreapp3.1\Order.Common.pdb
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csprojAssemblyReference.cache
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfoInputs.cache
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.AssemblyInfo.cs
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.csproj.CoreCompileInputs.cache
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.dll
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.pdb
+D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.Common\obj\Debug\netcoreapp3.1\Order.Common.genruntimeconfig.cache

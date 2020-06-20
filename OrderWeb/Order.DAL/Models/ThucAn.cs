@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Order.DAL.Models
@@ -15,7 +15,7 @@ namespace Order.DAL.Models
         public string TenThucAn { get; set; }
         public int? Gia { get; set; }
         public int? GiamGia { get; set; }
-        public string ChiChu { get; set; }
+        public string GhiChu { get; set; }
 
         public virtual LoaiThucAn MaLoaiNavigation { get; set; }
         public virtual ICollection<ThongTinHoaDon> ThongTinHoaDon { get; set; }

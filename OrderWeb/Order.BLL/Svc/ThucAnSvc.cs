@@ -1,4 +1,4 @@
-﻿using LTCSDL.Common.BLL;
+using LTCSDL.Common.BLL;
 using LTCSDL.Common.Rsp;
 using Order.Common.Req;
 using Order.DAL.Models;
@@ -18,12 +18,12 @@ namespace Order.BLL.Svc
             //Khởi tạo user
             ThucAn thucAn = new ThucAn();
             //Gán giá trị
-          thucAn.MaThucAn = req.MaThucAn;
+            thucAn.MaThucAn = req.MaThucAn;
             thucAn.MaLoai = req.MaLoai;
             thucAn.TenThucAn = req.TenThucAn;
             thucAn.Gia = req.Gia;
             thucAn.GiamGia = req.GiamGia;
-            thucAn.ChiChu = req.ChiChu;
+            thucAn.GhiChu = req.GhiChu;
             //Tạo sau khi gán giá trị
             res = base.Create(thucAn);
             res.Data = thucAn;
@@ -40,7 +40,7 @@ namespace Order.BLL.Svc
             thucAn.TenThucAn = req.TenThucAn;
             thucAn.Gia = req.Gia;
             thucAn.GiamGia = req.GiamGia;
-            thucAn.ChiChu = req.ChiChu;
+            thucAn.GhiChu = req.GhiChu;
             //Tạo sau khi gán giá trị
             res = base.Update(thucAn);
             res.Data = thucAn;

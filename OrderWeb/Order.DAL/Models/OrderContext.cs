@@ -27,7 +27,7 @@ namespace Order.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=.\\THANHSANG;Initial Catalog=Order;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Order;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;");
             }
         }
 
@@ -94,7 +94,7 @@ namespace Order.DAL.Models
 
                 entity.Property(e => e.MaThucAn).HasMaxLength(50);
 
-                entity.Property(e => e.ChiChu).HasMaxLength(50);
+                entity.Property(e => e.GhiChu).HasMaxLength(50);
 
                 entity.Property(e => e.MaLoai).HasMaxLength(50);
 

@@ -1,4 +1,4 @@
-﻿using LTCSDL.Common.DAL;
+using LTCSDL.Common.DAL;
 using LTCSDL.Common.Rsp;
 using Order.DAL.Models;
 using System;

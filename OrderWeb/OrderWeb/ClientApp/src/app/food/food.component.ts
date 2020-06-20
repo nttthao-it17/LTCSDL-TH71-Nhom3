@@ -29,7 +29,7 @@ export class FoodComponent {
       tenThucAn: "",
       gia: 0,
       giamGia: 0,
-      chiChu: ""
+      ghiChu: ""
     }
     public constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
         this.searchFood(1);
@@ -53,7 +53,7 @@ export class FoodComponent {
                 }
                 //Không thu được dữ liệu
                 else {
-                    alert(res.message);
+                    alert("loi");
                 }
             },
             error => {
@@ -75,6 +75,7 @@ export class FoodComponent {
             this.food.giamGia = 0
         }
         //post
+        console.log(this.food)
         this.http.post('https://localhost:44387/api/ThucAn/create-thucAn', this.food).subscribe(
             result => {
                 var res: any = result;
@@ -160,7 +161,7 @@ export class FoodComponent {
                 tenThucAn: "",
                 gia: "",
                 giamGia: "",
-                chiChu: ""
+                ghiChu: ""
             }
         }
     }
