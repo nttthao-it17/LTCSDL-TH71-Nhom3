@@ -17,7 +17,16 @@ export class HomeOrderComponent implements OnInit {
   matKhau:any;
   user:any;
   isLogin: boolean =  false;
-  constructor(
+
+  userregis: any = {
+    tenNguoiDung: "",
+    email: "",
+    matKhau: "",
+    diaChi: "",
+    soDienThoai: ""
+  }
+
+  public constructor(
 
     private mainService : HomeService,
     private route : Router
@@ -41,7 +50,24 @@ export class HomeOrderComponent implements OnInit {
         }  
       },
       err=>{
-        alert("Something wrong")
+        alert("Lỗi! Vui lòng kiểm tra lại.")
+      }
+    )
+  }
+
+  dangKy() {
+    this.mainService.addAccount(this.userregis).subscribe(
+      res => {
+        if (res.data != null && res.success) {
+          this.user = res.data;
+          alert("Đăng ký tài khoản thành công!")
+        }
+        else {
+          alert(res.message)
+        }
+      },
+      err => {
+        alert("Lỗi! Vui lòng kiểm tra lại.")
       }
     )
   }

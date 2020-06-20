@@ -15,8 +15,6 @@ const httpOptions = {
 export class HomeService {
     constructor(private http: HttpClient) { }
 
-
-
     login(email,matkhau) : Observable<any>{
         return this.http.post(URL + 'login-user',
         {
@@ -25,5 +23,18 @@ export class HomeService {
         }
         , httpOptions);
     }
+
     
+    addAccount(userregis): Observable<any>{
+        console.log(userregis)
+        return this.http.post('https://localhost:44387/api/UserRegistration/tao-tai-khoan',
+        {            
+            tenNguoiDung: userregis.tenNguoiDung,
+            email: userregis.email,
+            matKhau: userregis.matKhau,           
+            diaChi: userregis.diaChi,
+            soDienThoai: userregis.soDienThoai
+        }
+        , httpOptions);
+    }
 }

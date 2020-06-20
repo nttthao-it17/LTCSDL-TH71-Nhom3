@@ -85,31 +85,28 @@
 
                                                                 <label data-error="wrong" data-success="right"
                                                                     for="Form-name"
-                                                                    style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Name</label>
+                                                                    style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Tên người dùng</label>
                                                                 <input type="name" id="Form-name"
-                                                                    class="form-control validate" style="height: 40px;">
+                                                                    class="form-control validate" style="height: 40px;" [(ngModel)] = "userregis.tenNguoiDung">
                                                                 <label data-error="wrong" data-success="right"
                                                                     for="Form-email1"
                                                                     style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Email</label>
                                                                 <input type="email" id="Form-email1"
-                                                                    class="form-control validate" style="height: 40px;">
+                                                                    class="form-control validate" style="height: 40px;" [(ngModel)] = "userregis.email">
 
                                                                 <label data-error="wrong" data-success="right"
                                                                     for="Form-diaChi"
                                                                     style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Địa
                                                                     chỉ</label>
                                                                 <input type="diaChi" id="Form-diaChi"
-                                                                    class="form-control validate" style="height: 40px;">
+                                                                    class="form-control validate" style="height: 40px;" [(ngModel)] = "userregis.diaChi">
 
                                                                 <label data-error="wrong" data-success="right"
                                                                     for="Form-sdt"
                                                                     style="color: #00C851; text-align: left; font-size: 14px; margin-left: -390px;">Số
                                                                     điện thoại</label>
                                                                 <input type="sdt" id="Form-sdt"
-                                                                    class="form-control validate" style="height: 40px;">
-
-
-
+                                                                    class="form-control validate" style="height: 40px;" [(ngModel)] = "userregis.soDienThoai">
                                                             </div>
 
                                                             <div class="md-form pb-3">
@@ -118,14 +115,14 @@
                                                                     style="color: #00C851; text-align: left; font-size: 14px; margin-left: -420px;">Mật
                                                                     khẩu</label>
                                                                 <input type="password" id="Form-pass1"
-                                                                    class="form-control validate" style="height: 40px;">
+                                                                    class="form-control validate" style="height: 40px;" [(ngModel)] = "userregis.matKhau">
 
                                                             </div>
 
                                                             <div class="text-center mb-3">
                                                                 <button type="button"
                                                                     class="btn blue-gradient btn-block btn-rounded z-depth-1a"
-                                                                    style="height: 40px; background-color: #00C851; font-size: 20px; color: #fff;">Đăng ký</button>
+                                                                    style="height: 40px; background-color: #00C851; font-size: 20px; color: #fff;" (click)="dangKy()">Đăng ký</button>
                                                             </div>
 
                                                         </div>
