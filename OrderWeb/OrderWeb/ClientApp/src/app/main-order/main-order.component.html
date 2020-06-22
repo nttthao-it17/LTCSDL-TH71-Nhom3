@@ -1,3 +1,7 @@
+<link rel='stylesheet' href='https://cdn.rawgit.com/brunodsgn/notifyme/master/assets/css/notifyme.css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='https://cdn.rawgit.com/brunodsgn/notifyme/master/assets/js/notifyme.js'></script>
 <header>
     <div class="head">
       
@@ -10,10 +14,12 @@
                     <button style="width: 225px;height: 65px; background-color: darkorange;" ><img src="assets/img/orde.png" class = "card-img"alt="OrderLogo.com" max-width = "180px" height="26.41px"></button>
                 </a>
             </div>
+        
             
+
             <!--Dòng chữ giữa ảnh-->
             <div class = "centered">
-                <h1 style="background-color: black;  font-size: 45px; line-height: 40p; text-align: center;     padding: 4px">
+                <h1 style="background-color: #261e1e;  font-size: 45px; line-height: 40p; text-align: center;     padding: 4px">
                     <span style="color:white; color: #fff;padding: 4px; font-weight: 400; ">
                         Đặt thức ăn tại nhà hàng
                     </span>
@@ -21,14 +27,14 @@
             </div>
             <!--Search-->
             <div class="top-right2">
-                    <div class="box">
-                        <input type="text" placeholder="Tìm thức ăn...">
-                        <a><i class="fas fa-search-location"></i></a>
-                    </div>
-                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+                <div class="box">
+                    <input class ="search" type="text" placeholder="Tìm thức ăn...">
+                    <a><i class="fas fa-search-location"></i></a>
+                </div>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-            </div>
-            
+        </div>
+        
 
 
         </div>
@@ -43,7 +49,7 @@
                     <h2 class="h2">
                         <span>Dịch vụ chúng tôi cung cấp</span>
                     </h2>
-                    <span class="small">Đặt thức ăn thật dễ dàng, Order.com sẽ giúp bạn!</span>
+                   
                     <img class="icon_title" src="//bizweb.dktcdn.net/100/387/180/themes/765139/assets/icon_title.png?1590391920314" alt="Template Wedding Planer">
                 </div>
                 <div class="row">
@@ -53,10 +59,9 @@
                                 <h3>
                                     <a href="tin-tuc" title="Bún bò Huế">Bún bò Huế</a>
                                 </h3>
-                                <span>Giá: 30,000đ </span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 30,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -67,10 +72,9 @@
                                 <h3>
                                     <a href="tin-tuc" title="Cơm sườn">Cơm sườn</a>
                                 </h3>
-                                <span>Giá: 25,000đ</span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 25,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -81,10 +85,9 @@
                                 <h3>
                                     <a href="tin-tuc" title="Bò kho bánh mì">Bò kho bánh mì</a>
                                 </h3>
-                                <span>Giá: 40,000đ</span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 30,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -95,10 +98,9 @@
                                 <h3>
                                     <a href="tin-tuc" title="Phở gà">Phở gà</a>
                                 </h3>
-                                <span>Giá: 35,000đ</span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 35,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -107,12 +109,11 @@
                         <div class="scale_hover_img lazyload" style="background-image: url(assets/img/hutieu.jpg);">
                             <div class="info">
                                 <h3>
-                                    <a href="tin-tuc" title="Hũ tiếu">Hủ tiếu</a>
+                                    <a href="tin-tuc" title="Hũ tiếu">Hũ tiếu</a>
                                 </h3>
-                                <span>Giá: 25,000đ</span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 20,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -123,10 +124,9 @@
                                 <h3>
                                     <a href="tin-tuc" title="Cơm gà xối mỡ">Cơm gà xối mỡ</a>
                                 </h3>
-                                <span>Giá: 30,000đ</span>
                                 <br>
-                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Mua ngay</button>
-                                <button type="button" class="btn btn-outline-danger">Thêm</button>
+                                <span style="color: #ed3952; font-size: 18px; margin: 20px;">Giá: 30,000đ </span>
+                                <button type="button" class="btn btn-outline-danger" (click) = "muaNgay()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
@@ -151,17 +151,19 @@
                             <input class="minus is-form" type="button" value="-" (click) = "xuLy()">
                             <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
                             <input class="plus is-form" type="button" value="+" (click) = "xuLy()">
-                            <br>
-                            <span>Tạm tính: </span>
-                            <output>Tổng tiền</output>
+                            
+                               
+                               
 
                         </div>
                     </div>
                     
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-primary">Lưu lại</button>
+                        <button type="button" class="btn1 btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn1 btn-primary" onclick="alert('Đã đặt hàng thành công!!!')">Đặt hàng</button>
+                       
                     </div>
+                    
                     
                 </div>
             </div>
