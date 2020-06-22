@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {}
+    "D:\\OU Study\\GitHub\\git1\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {}
   },
   "projects": {
-    "D:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
+    "D:\\OU Study\\GitHub\\git1\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
+        "projectUniqueName": "D:\\OU Study\\GitHub\\git1\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
         "projectName": "Order.Common",
-        "projectPath": "D:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\obj\\",
+        "projectPath": "D:\\OU Study\\GitHub\\git1\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\Order.Common.csproj",
+        "packagesPath": "C:\\Users\\T430s\\.nuget\\packages\\",
+        "outputPath": "D:\\OU Study\\GitHub\\git1\\LTCSDL-TH71-Nhom3\\OrderWeb\\Order.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\T430s\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
