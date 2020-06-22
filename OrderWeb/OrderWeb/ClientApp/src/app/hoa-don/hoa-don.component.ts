@@ -1,21 +1,15 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 declare var $: any;
-
-
 @Component({
   selector: 'app-hoa-don',
   templateUrl: './hoa-don.component.html',
  // styleUrls: ['./hoa-don.component.css']
 })
 export class HoaDonComponent  {
-
   size: Number = 5; //Mặc định
   keyWord: String = ""; //Mặc định
-
   isEdit: Boolean = false; //Kiểm tra thêm hay sửa
-
   nowDate: Date = new Date(); //Ngày hôm nay
   //Khởi tạo biến nhận response User
   hoadons: any = {
@@ -29,11 +23,9 @@ export class HoaDonComponent  {
   hoadon: any = {
       maOrder: "",
       maThucAn: "",
-      tenThucAn: "",
       gia: 0,
       giamGia: 0,
-      ngayDatMon: this.nowDate.toJSON(),
-      maNguoiDung: ""
+     ghiChu:""
   }
   public constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
       this.searchHoaDon(1);
@@ -47,7 +39,7 @@ export class HoaDonComponent  {
       }
       //Các value truyền vào phải giống tên với các tham số phía back-end
       //post
-      this.http.post('https://localhost:44387/api/Order/search-order', value).subscribe(
+      this.http.post('https://localhost:44387/api/ThongTinHoaDon/search-thongTinHoaDon', value).subscribe(
           result => {
               var res: any = result;
               // Sử dụng SingleRsp
@@ -79,7 +71,7 @@ export class HoaDonComponent  {
            this.hoadon.giamGia = 0
        }
       //post
-      this.http.post('https://localhost:44387/api/Order/create-Order', this.hoadon).subscribe(
+      this.http.post('https://localhost:44387/api/ThongTinHoaDon/create-thongTinHoaDon', this.hoadon).subscribe(
           result => {
               var res: any = result;
               //Phần này dùng lấy dữ liệu không xài SingleRsp dưới Back-End
@@ -100,8 +92,20 @@ export class HoaDonComponent  {
   }
   //Sửa
   updateHoaDon() {
+       //Chuyển dữ liệu chữ sang số sau khi nhập
+       try
+       {
+           this.hoadon.gia = parseInt(this.hoadon.gia);
+           this.hoadon.giamGia = parseInt(this.hoadon.giamGia);
+       }
+       catch
+       {
+           //Nếu parse lỗi chuyển hết về 0
+           this.hoadon.gia = 0
+           this.hoadon.giamGia = 0
+       }
       //post
-      this.http.post('https://localhost:44387/api/Order/update-order', this.hoadon).subscribe(
+      this.http.post('https://localhost:44387/api/ThongTinHoaDon/update-thongTinHoaDon', this.hoadon).subscribe(
           result => {
               var res: any = result;
               //Thu được dữ liệu
@@ -124,7 +128,7 @@ export class HoaDonComponent  {
       var check = confirm("Bạn có chắc chắn xóa danh mục này ?"); //Tạo thông báo xác nhận xóa
       if (check == true) {
           //delete
-          this.http.post('https://localhost:44387/api/Order/delete-order?maOrder=' + maOrder, maOrder).subscribe(
+          this.http.post('https://localhost:44387/api/ThongTinHoaDon/delete-thongTinHoaDon?maOrder=' + maOrder, maOrder).subscribe(
               result => {
                   var res: any = result;
                   //Phần này dùng lấy dữ liệu không xài SingleRsp dưới Back-End
@@ -159,13 +163,11 @@ export class HoaDonComponent  {
       else {
           //thêm mới
           this.hoadon = {
-            maOrder: "o08",
-            maThucAn: "ta01",
-            tenThucAn: "cd",
-            gia: 0,
-            giamGia: 0,
-            ngayDatMon: this.nowDate.toJSON(),
-            maNguoiDung: "nd02"
+            maOrder: "",
+            maThucAn: "",
+            gia: "",
+            giamGia: "",
+            ghiChu: ""
           }
       }
   }

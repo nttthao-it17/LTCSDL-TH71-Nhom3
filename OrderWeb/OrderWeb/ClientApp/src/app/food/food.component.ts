@@ -97,6 +97,17 @@ export class FoodComponent {
     }
     //Sửa
     updateFood() {
+        try
+        {
+            this.food.gia = parseInt(this.food.gia);
+            this.food.giamGia = parseInt(this.food.giamGia);
+        }
+        catch
+        {
+            //Nếu parse lỗi chuyển hết về 0
+            this.food.gia = 0
+            this.food.giamGia = 0
+        }
         //post
         this.http.post('https://localhost:44387/api/ThucAn/update-thucAn', this.food).subscribe(
             result => {

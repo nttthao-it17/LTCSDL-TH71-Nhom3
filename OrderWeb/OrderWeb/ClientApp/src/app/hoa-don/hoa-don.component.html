@@ -1,15 +1,13 @@
+
 <h1 *ngIf="hoadons.totalRecords == 0"><em>Không có dữ liệu</em></h1>
 <button type="button" class="btn btn-outline-dark" (click)="openCreateUpdateModal(false, null)">Thêm hóa đơn mới</button>
 <table class='table table-bordered' aria-labelledby="tableLabel" *ngIf="hoadons.totalRecords != 0">
     <thead>
         <tr>
             <th>Mã Order</th>
-            <th>Mã món ăn</th>
-            <th>Tên món ăn</th>
+            <th>Mã Thức ăn</th>
             <th>Giá</th>
-            <th>Giảm giá</th>
-            <th>Ngày đặt món</th>
-            <th>Mã người dùng</th>
+            <th>Số lượng</th>
             <th>Chức năng</th>
         </tr>
     </thead>
@@ -17,11 +15,8 @@
         <tr *ngFor="let data of hoadons.data; index as i;">
             <td>{{ data.maOrder }}</td>
             <td>{{ data.maThucAn }}</td>
-            <td>{{ data.tenThucAn}}</td>
-            <td>{{ data.gia}}</td>
-            <td>{{ data.giamGia}}</td>
-            <td>{{ data.ngayDatMon | date: 'dd-MM-yyyy'}}</td>
-            <td>{{ data.maNguoiDung}}</td>
+            <td>{{ data.gia }}</td>
+            <td>{{ data.giamGia }}</td>
             <td>
                 <button type="button" class="btn btn-outline-warning" style="margin-left: 10px;"
                  (click)="openCreateUpdateModal(true, i)">Sửa</button>
@@ -41,7 +36,6 @@
         <a type="button" class="btn btn-secondary" href="javascprit:void(0)" (click)="goNext()">Next</a>
     </li>
 </ul>
-
 <!-- Modal -->
 <div class="modal fade" id="openCreateUpdateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -57,7 +51,6 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-9">
-
                     </div>
                     <div class="col-3">
                         <p>* là bắt buộc nhập</p>
@@ -72,39 +65,30 @@
                     </div>
                 </div>
                 <br />
-                <!---->
-                <div class="row">
-                    <div class="col-3">
-                        Mã món ăn *
-                    </div>
-                    <div class="col-9">
-                        <input class="form-control" [(ngModel)]="hoadon.maThucAn" />
-                    </div>
+              <!---->
+              <div class="row">
+                <div class="col-3">
+                    Mã Thức ăn *
                 </div>
-                <br />
-                <!---->
-                <div class="row">
-                    <div class="col-3">
-                        Tên món ăn *
-                    </div>
-                    <div class="col-9">
-                        <input class="form-control" [(ngModel)]="hoadon.tenThucAn" />
-                    </div>
+                <div class="col-9">
+                    <input class="form-control" [(ngModel)]="hoadon.maThucAn" />
                 </div>
-                <br />
-                <!---->
-                <div class="row">
+            </div>
+            <br />
+          <!---->
+          <div class="row">
+            <div class="col-3">
+                Giá *
+            </div>
+            <div class="col-9">
+                <input class="form-control" [(ngModel)]="hoadon.gia" />
+            </div>
+        </div>
+        <br />
+                 <!---->
+                 <div class="row">
                     <div class="col-3">
-                        Giá *
-                    </div>
-                    <div class="col-9">
-                        <input class="form-control" [(ngModel)]="hoadon.gia" />
-                    </div>
-                </div>
-                <br />
-                <div class="row">
-                    <div class="col-3">
-                        Giảm giá *
+                        Số lượng *
                     </div>
                     <div class="col-9">
                         <input class="form-control" [(ngModel)]="hoadon.giamGia" />
@@ -113,28 +97,14 @@
                 <br />
                 <!---->
                 <div class="row">
-                    <div class="col-12">
-                        Ngày đặt món *
+                    <div class="col-3">
+                        Ghi Chú
+                    </div>
+                    <div class="col-9">
+                        <input  class="form-control" [(ngModel)]="hoadon.ghiChu" />
                     </div>
                 </div>
-                <!---->
-                <div class="row">
-                    <div class="col-12">
-                        <input [disabled]="ngayDatMon != 0" class="form-control" [(ngModel)]="hoadon.ngayDatMon" />
-                    </div>
-                </div>
-                 <!---->
-                 <div class="row">
-                    <div class="col-12">
-                        Mã người dùng *
-                    </div>
-                </div>
-                <!---->
-                <div class="row">
-                    <div class="col-12">
-                        <textarea class="form-control" rows=3 [(ngModel)]="hoadon.maNguoiDung"></textarea>
-                    </div>
-                </div> 
+                <br />
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
                     <button *ngIf="!isEdit" type="button" class="btn btn-success" (click)="createHoaDon()">Tạo danh
