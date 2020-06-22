@@ -103,3 +103,18 @@ D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\
 D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.dll
 D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.pdb
 D:\OU Study\GitHub\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.genruntimeconfig.cache
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.DAL.deps.json
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.DAL.runtimeconfig.json
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.DAL.runtimeconfig.dev.json
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.DAL.dll
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.DAL.pdb
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.Common.dll
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\bin\Debug\netcoreapp3.1\Order.Common.pdb
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.csprojAssemblyReference.cache
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.AssemblyInfoInputs.cache
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.AssemblyInfo.cs
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.csproj.CoreCompileInputs.cache
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.csproj.CopyComplete
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.dll
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.pdb
+D:\LTCSDL-TH71-Nhom3\OrderWeb\Order.DAL\obj\Debug\netcoreapp3.1\Order.DAL.genruntimeconfig.cache

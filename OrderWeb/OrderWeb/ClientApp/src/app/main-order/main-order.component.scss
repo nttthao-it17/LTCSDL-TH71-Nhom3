@@ -283,3 +283,47 @@ background: #ebebeb;
     -webkit-appearance:none;
     margin:0;
 }
+.box {
+  height: 60px;
+  background-color: rgb(252, 171, 49);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 0px;
+  transition: 0.8s ease;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+ 
+input::placeholder {
+  color: antiquewhite;
+}
+ 
+a {
+  color: whitesmoke;
+  text-align: center;
+  width: 60px;
+  font-size: 18px;
+}
+ 
+.box:hover input {
+  width: 200px;
+  margin: 0 20px;
+  border-bottom: 2px solid white;
+}
+ 
+input:focus {
+  width: 200px;
+  margin: 0 20px;
+  border-bottom: 2px solid white;
+}
